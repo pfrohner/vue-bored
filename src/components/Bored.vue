@@ -49,7 +49,7 @@ export default {
       this.getRandomActivity();
     },
     clearAllActivites() {
-      const confirm = confirm("Are you sure?");
+      const confirm = window.confirm("Are you sure?");
       if (confirm) {
         if (localStorage) {
           localStorage.removeItem("bored");

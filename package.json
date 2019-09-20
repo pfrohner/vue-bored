@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build && ./node_modules/push-dir/bin/push-dir.js --dir dist --branch=gh-pages --cleanup --allow-unclean",
+    "build": "vue-cli-service build",
+    "deploy:gh": "vue-cli-service build && ./node_modules/push-dir/bin/push-dir.js --dir dist --branch=gh-pages --cleanup --allow-unclean",
     "lint": "vue-cli-service lint",
     "test": "jest",
     "test:watch": "jest --watch"
