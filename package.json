@@ -4,35 +4,36 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build && ./node_modules/push-dir/bin/push-dir.js --dir dist --branch=gh-pages --cleanup --allow-unclean",
+    "lint": "vue-cli-service lint",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.1",
     "core-js": "^2.6.5",
+    "push-dir": "^0.4.1",
     "vue": "^2.6.10"
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.6.0",
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-plugin-eslint": "^3.11.0",
     "@vue/cli-service": "^3.11.0",
+    "@vue/server-test-utils": "^1.0.0-beta.29",
+    "@vue/test-utils": "^1.0.0-beta.29",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "jest": "^24.9.0",
+    "jest-serializer-vue": "^2.0.2",
+    "jest-transform-stub": "^2.0.0",
+    "sass": "^1.22.12",
+    "sass-loader": "^8.0.0",
+    "vue-jest": "^3.0.5",
     "vue-template-compiler": "^2.6.10"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
   },
   "postcss": {
     "plugins": {

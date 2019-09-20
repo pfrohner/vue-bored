@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Activity renders correctly 1`] = `
+<section
+  class="mb-3"
+>
+  <div
+    class="row text-left"
+  >
+    <div
+      class="col-sm-6"
+    >
+      <p>
+        You should:
+      </p>
+       
+      <label
+        for="name"
+      >
+        Activity
+      </label>
+       
+      <textarea
+        class="md-textarea form-control mb-3"
+        id="name"
+        rows="5"
+      />
+    </div>
+     
+    <div
+      class="col-sm-6"
+    >
+      <p>
+        Activity details:
+      </p>
+       
+      <div
+        class="form-group"
+      >
+        <label
+          for="type"
+        >
+          Type
+        </label>
+         
+        <input
+          class="form-control"
+          id="type"
+          type="text"
+        />
+      </div>
+       
+      <div
+        class="form-group"
+      >
+        <label
+          for="participants"
+        >
+          Participants
+        </label>
+         
+        <input
+          class="form-control"
+          id="participants"
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+   
+  <div
+    class="row"
+  >
+    <div
+      class="col-sm-6"
+    >
+      <button
+        class="btn btn-danger btn-block mb-3"
+        data-test="add-btn"
+      >
+        Save for later!
+      </button>
+    </div>
+     
+    <div
+      class="col-sm-6"
+    >
+      <button
+        class="btn btn-primary btn-block mb-3"
+        data-test="get-btn"
+      >
+        Hit me with a new one!
+      </button>
+    </div>
+  </div>
+</section>
+`;

@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bored Container renders correctly 1`] = `
+<main
+  class="container"
+>
+  <h3
+    class="mb-3"
+  >
+    Bored? There is an API for you!
+  </h3>
+   
+  <p>
+    Data is saved on localStorage, you can come back to check your list anytime.
+  </p>
+   
+  <div
+    class="position-relative disabled"
+  >
+    <div
+      class="sk-circle spinner"
+    >
+      <div
+        class="sk-circle1 sk-child"
+      />
+       
+      <div
+        class="sk-circle2 sk-child"
+      />
+       
+      <div
+        class="sk-circle3 sk-child"
+      />
+       
+      <div
+        class="sk-circle4 sk-child"
+      />
+       
+      <div
+        class="sk-circle5 sk-child"
+      />
+       
+      <div
+        class="sk-circle6 sk-child"
+      />
+       
+      <div
+        class="sk-circle7 sk-child"
+      />
+       
+      <div
+        class="sk-circle8 sk-child"
+      />
+       
+      <div
+        class="sk-circle9 sk-child"
+      />
+       
+      <div
+        class="sk-circle10 sk-child"
+      />
+       
+      <div
+        class="sk-circle11 sk-child"
+      />
+       
+      <div
+        class="sk-circle12 sk-child"
+      />
+    </div>
+     
+    <div
+      class="tabs"
+    >
+      <!---->
+      <div
+        class=""
+      >
+        <ul
+          class="nav nav-tabs"
+          role="tablist"
+        >
+          <!---->
+          <!---->
+        </ul>
+      </div>
+      <div
+        class="tab-content mt-3 tabs"
+      >
+        <div
+          aria-hidden="false"
+          class="tab-pane active"
+          role="tabpanel"
+          tabindex="-1"
+        >
+          <section
+            class="mb-3"
+          >
+            <div
+              class="row text-left"
+            >
+              <div
+                class="col-sm-6"
+              >
+                <p>
+                  You should:
+                </p>
+                 
+                <label
+                  for="name"
+                >
+                  Activity
+                </label>
+                 
+                <textarea
+                  class="md-textarea form-control mb-3"
+                  id="name"
+                  rows="5"
+                />
+              </div>
+               
+              <div
+                class="col-sm-6"
+              >
+                <p>
+                  Activity details:
+                </p>
+                 
+                <div
+                  class="form-group"
+                >
+                  <label
+                    for="type"
+                  >
+                    Type
+                  </label>
+                   
+                  <input
+                    class="form-control"
+                    id="type"
+                    type="text"
+                  />
+                </div>
+                 
+                <div
+                  class="form-group"
+                >
+                  <label
+                    for="participants"
+                  >
+                    Participants
+                  </label>
+                   
+                  <input
+                    class="form-control"
+                    id="participants"
+                    type="text"
+                  />
+                </div>
+              </div>
+            </div>
+             
+            <div
+              class="row"
+            >
+              <div
+                class="col-sm-6"
+              >
+                <button
+                  class="btn btn-danger btn-block mb-3"
+                  data-test="add-btn"
+                >
+                  Save for later!
+                </button>
+              </div>
+               
+              <div
+                class="col-sm-6"
+              >
+                <button
+                  class="btn btn-primary btn-block mb-3"
+                  data-test="get-btn"
+                >
+                  Hit me with a new one!
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+         
+        <div
+          aria-hidden="true"
+          class="tab-pane"
+          role="tabpanel"
+          style="display: none;"
+        >
+          <section>
+            <p
+              data-test="empty-msg"
+            >
+              Your list is empty.
+            </p>
+          </section>
+        </div>
+        <div
+          class="tab-pane active"
+        />
+      </div>
+    </div>
+  </div>
+</main>
+`;

@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List renders correctly 1`] = `
+<section>
+  <table
+    class="table text-left"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+        >
+          #
+        </th>
+         
+        <th
+          scope="col"
+        >
+          Activity
+        </th>
+         
+        <th
+          scope="col"
+        >
+          Type
+        </th>
+         
+        <th
+          scope="col"
+        >
+          Participants
+        </th>
+      </tr>
+    </thead>
+     
+    <tbody>
+      <tr>
+        <th
+          scope="row"
+        >
+          1
+        </th>
+         
+        <td>
+          test
+        </td>
+         
+        <td>
+          unit
+        </td>
+         
+        <td>
+          46
+        </td>
+      </tr>
+       
+      <tr>
+        <td
+          colspan="4"
+        >
+          <button
+            class="btn btn-danger btn-block"
+            data-test="clear-btn"
+          >
+            Clear all
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+`;
