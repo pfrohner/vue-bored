@@ -1,6 +1,9 @@
-export function fetchRandomActivity() {
-    // TODO: make sure 'fetch' is supported (looking at you, IE), otherwise use axios instead.
-    return fetch(
-        `https://www.boredapi.com/api/activity/`
-    ).then(res => res.json())
-}
+import Vue from 'vue';
+import axios from "axios";
+
+const baseURL = "https://www.boredapi.com/api";
+const http = axios.create({
+    baseURL
+});
+
+Vue.prototype.$http = http

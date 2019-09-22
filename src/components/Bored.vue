@@ -17,8 +17,6 @@
 </template>
 
 <script>
-import { fetchRandomActivity } from "@/api";
-
 import Activity from "@/components/Activity.vue";
 import List from "@/components/List.vue";
 import Spinner from "@/components/Spinner.vue";
@@ -55,7 +53,7 @@ export default {
           localStorage.removeItem("bored");
         }
         this.activities = [];
-        this.showToast("Deleted all items from list.");
+        this.showToast("Items deleted.");
       }
     },
     saveToLocalStorage(activity) {
@@ -87,9 +85,10 @@ export default {
     async getRandomActivity() {
       this.isLoading = true;
       try {
-        this.newActivity = await fetchRandomActivity();
+        const response = await this.$http.get("/activity");
+        this.newActivity = response.data;
       } catch (e) {
-        this.showToast("Something went wrong with the API call!", "danger");
+        this.showToast(`Something went wrong!<br/ >${e}`, "danger");
       } finally {
         this.isLoading = false;
       }

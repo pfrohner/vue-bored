@@ -1,8 +1,16 @@
 import { mount, createLocalVue } from '@vue/test-utils'
+import flushPromises from 'flush-promises'
+import BTabs from 'bootstrap-vue'; // make this global in jest config?
+
 import Bored from './Bored.vue'
 
-import BTabs from 'bootstrap-vue'; // likely there is a way to make this global in jest config
-jest.mock('@/api')
+const response = {
+  data: {
+    activity: "Learn Express.js",
+    type: "education",
+    participants: 1,
+  }
+}
 
 const setup = ({
   methods
@@ -11,12 +19,17 @@ const setup = ({
   localVue.use(BTabs);
 
   return mount(Bored, {
+    mocks: {
+      $http: {
+        get: () => Promise.resolve(response)
+      }
+    },
     methods,
     localVue
   })
 }
 
-describe('Bored Container', () => {
+describe('Bored', () => {
   it('renders correctly', () => {
     const wrapper = setup()
 
@@ -26,6 +39,7 @@ describe('Bored Container', () => {
   it('calls correct methods when created', () => {
     const getRandomActivity = jest.fn()
     const getLocalStorageData = jest.fn()
+
     setup({
       methods: {
         getRandomActivity,
@@ -35,5 +49,12 @@ describe('Bored Container', () => {
 
     expect(getRandomActivity).toHaveBeenCalledTimes(1)
     expect(getLocalStorageData).toHaveBeenCalledTimes(1)
+  })
+
+  it('fetches a random activity from the API', async () => {
+    const wrapper = setup()
+    await flushPromises()
+
+    expect(wrapper.vm.newActivity).toBe(response.data)
   })
 })

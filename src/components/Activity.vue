@@ -15,7 +15,7 @@
         <p>Activity details:</p>
         <div class="form-group">
           <label for="type">Type</label>
-          <input type="text" class="form-control" id="type" :value="newActivity.type" />
+          <input type="text" class="form-control" id="type" v-model="newActivity.type" />
         </div>
         <div class="form-group">
           <label for="participants">Participants</label>
@@ -23,7 +23,7 @@
             type="text"
             class="form-control"
             id="participants"
-            :value="newActivity.participants"
+            v-model="newActivity.participants"
           />
         </div>
       </div>

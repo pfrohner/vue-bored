@@ -18,6 +18,7 @@ If any of the activity details have been changed update the page without reloadi
 - A **Clear all** will delete all the saved suggestions .
 
 ---
+## MVP Solution
 https://pfrohner.github.io/vue-bored/
 
 ## Project setup
@@ -30,9 +31,14 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production, deploys it to github.
+### Compiles and minifies for production.
 ```
 npm run build
+```
+
+### Builds and deploys to github.io
+```
+npm run deploy
 ```
 
 ### Run your tests
@@ -41,7 +47,8 @@ npm run test
 ```
 
 ## Todos
- - Finish the integration test in the Bored Smart component.
+ - Finish tests for 'Bored' component.
+ - Force eslint rules and format on save in tests as well.
  - Fix duplicated key warning when saving the same event multiple times.
  - Run tests before building, and deploying the app.
  - Pagination for list page.
