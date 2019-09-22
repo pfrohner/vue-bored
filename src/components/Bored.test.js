@@ -1,6 +1,6 @@
 import { mount, createLocalVue } from '@vue/test-utils'
 import flushPromises from 'flush-promises'
-import BTabs from 'bootstrap-vue'; // make this global in jest config?
+import BTabs from 'bootstrap-vue' // make this global in jest config?
 
 import Bored from './Bored.vue'
 
@@ -15,7 +15,7 @@ const response = {
 const setup = ({
   methods
 } = {}) => {
-  const localVue = createLocalVue();
+  const localVue = createLocalVue()
   localVue.use(BTabs);
 
   return mount(Bored, {
