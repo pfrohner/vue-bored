@@ -6,4 +6,4 @@ const http = axios.create({
     baseURL
 });
 
-Vue.prototype.$http = http
+Vue.prototype.$http = http;

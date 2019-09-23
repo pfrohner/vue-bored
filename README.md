@@ -50,5 +50,5 @@ npm run test
  - Finish tests for 'Bored' component.
  - Force eslint rules and format on save in tests as well.
  - Fix duplicated key warning when saving the same event multiple times.
- - Run tests before building, and deploying the app.
+ - Run tests before building and deploying the app.
  - Pagination for list page.
