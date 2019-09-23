@@ -16,7 +16,7 @@ describe('Activity', () => {
     expect(wrapper.element).toMatchSnapshot()
   })
 
-  it('emits the proper event when adding new activity', () => {
+  it('emits the correct event when adding new activity', () => {
     const wrapper = setup()
     const button = wrapper.find('[data-test="add-btn"]')
 
@@ -25,7 +25,7 @@ describe('Activity', () => {
     expect(wrapper.emitted().add).toBeTruthy()
   })
 
-  it('emits the appropriate event when getting activity', () => {
+  it('emits the correct event when getting activity', () => {
     const wrapper = setup()
     const button = wrapper.find('[data-test="get-btn"]')
 
